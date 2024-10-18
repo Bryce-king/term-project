@@ -1,0 +1,6 @@
+<h1>Average Ratings</h1>
+<ul>
+  <% ratings.forEach(function(rating) { %>
+    <li><%= rating.programName %>: <%= rating.avgRating %></li>
+  <% }) %>
+</ul>

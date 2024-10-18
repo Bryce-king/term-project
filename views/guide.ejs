@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Guide</title>
+</head>
+<body>
+  <h1>TV Listings (Current Time + 3 Hours)</h1>
+  <ul>
+    <% programs.forEach(program => { %>
+      <li>
+        <strong><%= program.name %></strong> 
+        (Network: <%= program.network %>) 
+        - Airing at: <%= program.time.toLocaleTimeString('en-US') %> 
+        - Duration: <%= program.duration %> minutes
+      </li>
+    <% }) %>
+  </ul>
+  
+
+</body>
+</html>
